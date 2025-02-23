@@ -1,13 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  background-color: #111111;
+  color: #FAF8F5;
+  margin: 0 6.4%;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding-right: 3rem;
+  flex-wrap: wrap;
+}
+body header nav {
+  width: 1.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
