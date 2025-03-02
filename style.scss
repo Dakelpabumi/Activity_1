@@ -1,41 +1,154 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://use.typekit.net/scg5ylz.css");
 
+// Define variables
+$background-color: #111111;
+$font-color: #FAF8F5;
+$primary-color: #E8951B;
+$secondary-color: #F1C077;
+$text-color: #FBEDD8;
+
+// Global styles
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Urbanist', sans-serif;
-    $background-color: #111111;
-    $font-color: #FAF8F5;
 }
-
-
 
 // Mobile First Styles
 body {
     background-color: $background-color;
     color: $font-color;
-    margin: 0 6.4%;
+    margin: 0;
+    padding: 0;
+}
 
-    
-    header {
+// Header styles
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 3rem 3.63375rem 1.5rem;
+}
+
+// Hero section styles
+.hero {
+    .hero-text {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 2.5rem;
-        padding-right: 3rem;
-        flex-wrap: wrap;
+        flex-flow: column wrap;
+        gap: 1rem;
+        margin-bottom: 2.25rem;
+        text-align: center;
 
-        nav {
-            width: 1.375rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        h1 {
+            margin: 0 1.5rem;
+            font-weight: 700;
+            font-size: 2.5rem; // 40px / 16px = 2.5rem
+            line-height: 3rem; // 48px / 16px = 3rem
+
+            .hero-span1 {
+                color: $primary-color;
+            }
+            .hero-span2 {
+                color: $secondary-color;
+            }
+        }
+
+        p {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+            font-size: 1.5rem; // 24px / 16px = 1.5rem
+            line-height: 1.885625rem; // 30.17px / 16px ≈ 1.885625rem
+            text-align: center;
+            margin: 0 1.5rem 0 1.5625rem;
+            color: $text-color;
         }
     }
 
+    .hero-app-btns {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin: 0 5.125rem 2.25rem 5.0625rem;
+    }
+
+    .hero-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 1.28375rem 4.5rem 0.75rem;
+    }
 }
 
+// How it works section styles
+.how-it-works {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    h2 {
+        font-weight: 900;
+        font-size: 2.625rem;
+        line-height: 3.15rem;
+        text-align: center;
+        color: $text-color;
+        margin: 0 1.75rem 0 1.375rem ;
+
+        span {
+            color: #E79316;
+        }
+    }
+    .how-it-works-description {
+        color: $text-color;
+        font-family: Source Sans Pro;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: center;
+        margin: 0 1.5rem 4.5625rem 1.375rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4.125rem;
+        .how-it-works-card {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0 1.5rem;
+            gap: 1.25rem;
+    
+            h3 {
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 2.4rem;
+                color: $secondary-color;
+            }
+            .card-p {
+                font-family: Source Sans Pro;
+                font-weight: 400;
+                font-size: 1.125rem;
+                line-height: 2rem;
+                color: $text-color;
+                text-align: center;
+            }
+
+        }
+    }
+
+    
+}
+
+// Container styles
 .container {
     width: 100%;
     padding: 15px;
