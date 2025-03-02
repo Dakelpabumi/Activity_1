@@ -71,6 +71,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 8.5625rem;
 }
 .how-it-works h2 {
   font-weight: 900;
@@ -113,13 +114,98 @@ header {
   line-height: 2.4rem;
   color: #F1C077;
 }
-.how-it-works .cards .how-it-works-card .card-p {
+.how-it-works .cards .how-it-works-card .card-text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5625rem;
+}
+.how-it-works .cards .how-it-works-card .card-text .card-p {
   font-family: Source Sans Pro;
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1.123rem;
   line-height: 2rem;
-  color: #FBEDD8;
   text-align: center;
+  color: #FBEDD8;
+}
+
+.sign-up {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 9.25rem;
+  margin: 0 1.5rem 4rem 1.5rem;
+}
+.sign-up .sign-up-header {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: #FBEDD8;
+}
+.sign-up .sign-up-header span {
+  color: #E8951B;
+}
+.sign-up .sign-up-header-text {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.sign-up .sign-up-steps {
+  color: #898989;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 3.6875rem;
+}
+.sign-up .sign-up-steps .sign-up-step {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.75rem;
+}
+.sign-up .sign-up-steps .sign-up-step .sign-up-step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.sign-up .sign-up-steps .sign-up-step .sign-up-step-header :hover {
+  text-decoration: underline;
+}
+.sign-up .sign-up-steps .sign-up-step .sign-up-step-header .sign-up-step-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+}
+.sign-up .sign-up-steps .sign-up-step .sign-up-step-header .sign-up-step-icon {
+  width: 17.2888755798px;
+  height: 10.8563337326px;
+}
+.sign-up .sign-up-steps .sign-up-step .sign-up-image {
+  display: none;
+  flex-flow: column wrap;
+  gap: 1.25rem;
+}
+.sign-up .sign-up-steps .sign-up-step .sign-up-image.active {
+  display: flex;
+  color: #FBEDD8;
+}
+.sign-up .sign-up-steps .sign-up-step .sign-up-image p {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2rem;
+}
+.sign-up .job-seeker {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5.4375rem;
 }
 
 .container {
