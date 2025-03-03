@@ -316,9 +316,12 @@ header {
     flex-flow: column wrap;
     align-items: center;
     text-align: center;
-
+    background-image: url('Image_Assets/Desktop_Assets/desktop-bg-swirls.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .touch-text {
-        margin: 8.25rem 1.5rem 0 1.5rem;
+        margin: 8.25rem 1.5rem 131.96px 1.5rem;
         h2 {
             font-weight: 700;
             font-size: 1.75rem;
@@ -334,9 +337,82 @@ header {
             color:$text-color;
             text-align: center;
         }
+        form {
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            gap: 1rem;
+            max-width: 37.5rem;
+
+            input {
+                height: 65.47826385498047px;
+                border-radius: 7.83px;
+                padding-top: 11.74px;
+                padding-bottom: 11.74px;
+                padding-left: 30px;
+                background: #333332;
+                border: 1.3px solid #868686;
+                font-family: Source Sans Pro;
+                font-weight: 400;
+                font-size: 23.48px;
+                line-height: 41.74px;
+                color: #B4B4B4;
+
+                &:focus {
+                    border: 1.3px solid $primary-color;
+                }
+            }
+            button {
+                margin-top: 14.57px;
+                width: 327px;
+                height: 73.0434799194336px;
+                border-radius: 130.43px;
+                background: linear-gradient(180deg, #ECA63D 0%, #E68C07 100%);
+                font-weight: 800;
+                font-size: 22.17px;
+                line-height: 28.7px;
+                text-align: center;
+            }
+        }
     }
 }
+a {
+    text-decoration: none; // Remove the underline from all <a> tags
+}
 
+footer {
+    background-color:#262626;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+
+    div {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        gap:2.5rem;
+        padding: 0 1.8125rem 0 1.8125rem;
+
+
+        a {
+            font-family: Source Sans Pro;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: white;
+            text-align: center;
+            text-decoration-line:none;
+            
+        }
+        .footer-a {
+            text-decoration: none;
+        }
+    }
+
+}
 // Tablet Styles
 @media (min-width: 768px) {
     .container {
