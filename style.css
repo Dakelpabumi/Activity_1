@@ -163,36 +163,38 @@ header {
   gap: 3.6875rem;
 }
 .sign-up .sign-up-steps .sign-up-step {
-  display: flex;
-  flex-flow: column wrap;
+  position: relative;
+  display: inline-block;
   gap: 0.75rem;
 }
 .sign-up .sign-up-steps .sign-up-step .sign-up-step-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
 }
 .sign-up .sign-up-steps .sign-up-step .sign-up-step-header :hover {
   text-decoration: underline;
+}
+.sign-up .sign-up-steps .sign-up-step .sign-up-step-header.active .sign-up-step-title {
+  color: #E8951B;
 }
 .sign-up .sign-up-steps .sign-up-step .sign-up-step-header .sign-up-step-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28.8px;
+  cursor: pointer;
+}
+.sign-up .sign-up-steps .sign-up-step .sign-up-step-header .sign-up-step-title :focus {
+  color: #E8951B;
 }
 .sign-up .sign-up-steps .sign-up-step .sign-up-step-header .sign-up-step-icon {
   width: 17.2888755798px;
   height: 10.8563337326px;
+  cursor: pointer;
 }
 .sign-up .sign-up-steps .sign-up-step .sign-up-image {
   display: none;
-  flex-flow: column wrap;
   gap: 1.25rem;
-}
-.sign-up .sign-up-steps .sign-up-step .sign-up-image.active {
-  display: flex;
-  color: #FBEDD8;
 }
 .sign-up .sign-up-steps .sign-up-step .sign-up-image p {
   font-family: Source Sans Pro;
@@ -200,7 +202,14 @@ header {
   font-size: 1.375rem;
   line-height: 2rem;
 }
-.sign-up .job-seeker {
+.sign-up .sign-up-steps .sign-up-step .show {
+  display: flex;
+  flex-flow: column wrap;
+}
+.sign-up .sign-up-steps .sign-up-step .show .dropbtn {
+  color: #E8951B;
+}
+.sign-up .job-seeker, .sign-up .employer {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -208,10 +217,74 @@ header {
   gap: 5.4375rem;
 }
 
-.container {
-  width: 100%;
-  padding: 15px;
-  box-sizing: border-box;
+.download-app {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 0.6875rem;
+  margin: 0 1.5rem 3rem 1.5rem;
+  border: 1px solid #4A4A4A;
+  border-radius: 5rem;
+  background: linear-gradient(180deg, #131313 0%, #000000 100%);
+}
+.download-app .app-text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding-top: 3.5rem;
+  text-align: center;
+  gap: 0.9375rem;
+  margin-bottom: 0.6875rem;
+}
+.download-app .app-text h1 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+  color: #F1C077;
+}
+.download-app .app-text h1 span {
+  color: #E79316;
+}
+.download-app .app-text p {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.download-app .app-text .app-buttons {
+  padding-top: 1.3125rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+}
+.get-in-touch .touch-text {
+  margin: 8.25rem 1.5rem 0 1.5rem;
+}
+.get-in-touch .touch-text h2 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2.1rem;
+  color: #E8951B;
+  text-align: center;
+}
+.get-in-touch .touch-text p {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2rem;
+  color: #FBEDD8;
+  text-align: center;
 }
 
 @media (min-width: 768px) {

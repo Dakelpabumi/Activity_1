@@ -74,11 +74,11 @@
             <div>
                 <div class="sign-up-steps">
                     <div class="sign-up-step">
-                        <div class="sign-up-step-header" data-toggle="dropdown">
-                            <h4 class="sign-up-step-title">Create Your Profile</h4>
-                            <img src="Image_Assets\Mobile_Assets\mobile-tab-vector.svg" alt="vector icon" class="sign-up-step-icon">
+                        <div class="sign-up-step-header" onclick="dropdown()">
+                            <h4 class="sign-up-step-title dropbtn">Create Your Profile</h4>
+                            <img src="Image_Assets\Mobile_Assets\mobile-tab-vector.svg" alt="vector icon" class="sign-up-step-icon dropbtn">
                         </div>
-                        <div class="sign-up-image">
+                        <div id="dropdown-content" class="sign-up-image">
                             <p class="sign-up-step-description">Build a comprehensive profile to stand out to potential employers.</p>
                             <img src="Image_Assets\Mobile_Assets\mobile-tab-job-seeker-profile.svg" alt="Job Seeker Profile">
                         </div>
@@ -142,7 +142,7 @@
     <!-- Download App Section -->
     <section class="download-app">
         <div class="app-text">
-            <h1>Empowering Careers & Simplifying Hiring</h1>
+            <h1>Empowering Careers <span>& Simplifying Hiring</span></h1>
             <p>Download Now and Connect with Top Talents</p>
             <div class="app-buttons">
                 <a href="#"><img src="Image_Assets\Mobile_Assets\mobile-icon-app-store.svg" alt="App Store Icon"></a>
@@ -156,15 +156,17 @@
 
     <!-- Get In Touch Section -->
     <section class="get-in-touch" style="background-image: url('Image_Assets/Desktop_Assets/desktop-bg-swirls.svg');">
-        <h2>Get In Touch</h2>
-        <p>Need to talk to our experts?
-            Leave your contact info and we’ll get in touch.</p>
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="phone" placeholder="Phone">
-            <button type="submit">Submit</button>
-        </form>
+        <div class="touch-text">
+            <h2>Get In Touch With Us</h2>
+            <p>Need to talk to our experts?
+                Leave your contact info and we’ll get in touch.</p>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="phone" placeholder="Phone">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
      </section>
 
 
