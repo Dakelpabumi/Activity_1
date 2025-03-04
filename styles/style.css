@@ -167,6 +167,7 @@ header {
   line-height: 32px;
   letter-spacing: 1px;
   text-align: center;
+  color: #FBEDD8;
 }
 .sign-up .job-seeker .sign-up-steps, .sign-up .employer .sign-up-steps {
   color: #898989;

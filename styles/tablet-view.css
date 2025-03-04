@@ -30,11 +30,13 @@ header {
 
 .how-it-works {
   gap: 78px;
+  margin-bottom: 90px;
 }
 .how-it-works .how-it-works-text {
   margin: 0 94px 0 94px;
   display: flex;
   flex-flow: column wrap;
+  gap: 12px;
 }
 .how-it-works .how-it-works-text h2 {
   font-size: 42px;
@@ -51,4 +53,19 @@ header {
 }
 .how-it-works .how-it-works-text .description-br2 {
   display: none;
+}
+.how-it-works .cards {
+  width: 333.2966308594px;
+  gap: 48px;
+}
+.how-it-works .cards .how-it-works-card {
+  margin: 0;
+}
+
+.sign-up {
+  width: 334px;
+  margin: 0 auto;
+}
+.sign-up .job-seeker h3 {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=tablet-view.css.map */
