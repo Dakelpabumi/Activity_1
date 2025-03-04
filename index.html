@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
+    <link rel="stylesheet" href="styles\style.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles\tablet-view.css">
+    <title>Heavy Duty Help</title>
 </head>
 <body>
 
@@ -18,12 +19,11 @@
         </nav>
     </header>
 
-
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text">
-            <h1><span class="hero-span1">Tailor Your<br>Career,</span> <span class="hero-span2"> Your Way,<br>Every Day.</span></h1>
-            <p>Effortless Job Search, Stress-<br>Free Hiring. Find Your Perfect <br> Fit Now</p>
+            <h1><span class="hero-span1">Tailor Your Career,<br></span> <span class="hero-span2"> Your Way, Every Day.</span></h1>
+            <p>Effortless Job Search, Stress-Free Hiring. Find Your Perfect Fit Now</p>
         </div>
         <div class="hero-app-btns">
             <a href="#"><img src="Image_Assets\Mobile_Assets\mobile-icon-app-store.svg" alt="App Store Icon"></a>
@@ -36,8 +36,10 @@
 
     <!-- How It Works Section -->
     <section class="how-it-works">
-        <h2>How <span class="how-it-works-span">Heavy Duty <br> Help</span> Works</h2>
-        <p class="how-it-works-description">Job seekers and employers connect seamlessly through a smooth application process and<br> user-friendly features to manage talent and careers. Effortlessly discover perfect-fit positions<br> with this platform.</p>
+        <div class="how-it-works-text">
+            <h2>How <span class="how-it-works-span">Heavy Duty Help</span> Works</h2>
+            <p class="how-it-works-description">Job seekers and employers connect seamlessly through a<br class="description-br1"> smooth application process and user-friendly features to<br class="description-br1"> manage talent and careers. Effortlessly discover perfect-<br class="description-br1">fit positions <br class="description-br2"> with this platform.</p>
+        </div>
         <div class="cards">
             <div class="how-it-works-card card-1">
                 <img src="Image_Assets\Desktop_Assets\desktop-icon-create-profile.svg" alt="Create Profile Icon">
@@ -125,15 +127,15 @@
                         <p class="sign-up-step-description">Create detailed job listings, specifying responsibilities, licenses/documents, and salary.</p>
                     </div>
                     <div class="sign-up-step">
-                        <div class="sign-up-step-header">
-                            <h4 class="sign-up-step-title">Simplified Hiring</h4>
+                        <div class="sign-up-step-header" onclick="dropdown()">
+                            <h4 class="sign-up-step-title dropbtn">Simplified Hiring</h4>
                             <img src="Image_Assets\Mobile_Assets\mobile-tab-vector.svg" alt="vector icon" class="sign-up-step-icon">
                         </div>
-                        <p class="sign-up-step-description">Review and manage applications seamlessly, extending job offers to selected candidates.</p>
+                        <div id="dropdown-content" class="sign-up-image">
+                            <p class="sign-up-step-description">Review and manage applications seamlessly, extending job offers to selected candidates.</p>
+                            <img src="Image_Assets\Mobile_Assets\mobile-tab-employer-attract-workers.svg" alt="Employer Profile">
+                        </div>
                     </div>
-                </div>
-                <div class="sign-up-image">
-                    <img src="Image_Assets\Mobile_Assets\mobile-tab-employer-attract-workers.svg" alt="Employer Profile">
                 </div>
             </div>
         </div>

@@ -1,0 +1,54 @@
+header {
+  margin: 2.375rem 4.625rem 4.625rem 3.5rem;
+}
+
+.hero {
+  margin: 0 2.25rem 4.5rem 2.25rem;
+}
+.hero .hero-text {
+  margin-bottom: 40px;
+}
+.hero .hero-text h1 {
+  font-weight: 800;
+  font-size: 65px;
+  line-height: 71px;
+  text-align: center;
+}
+.hero .hero-text p {
+  font-size: 30px;
+  line-height: 37.71px;
+  margin: auto;
+}
+.hero .hero-app-btns {
+  flex-flow: row wrap;
+  gap: 28px;
+  margin-bottom: 48px;
+}
+.hero .hero-img {
+  margin: 0 auto;
+}
+
+.how-it-works {
+  gap: 78px;
+}
+.how-it-works .how-it-works-text {
+  margin: 0 94px 0 94px;
+  display: flex;
+  flex-flow: column wrap;
+}
+.how-it-works .how-it-works-text h2 {
+  font-size: 42px;
+  line-height: 50.4px;
+  margin: 0;
+}
+.how-it-works .how-it-works-text .how-it-works-description {
+  width: 100%;
+  margin: 0;
+  font-size: 20px;
+}
+.how-it-works .how-it-works-text .description-br1 {
+  display: inline;
+}
+.how-it-works .how-it-works-text .description-br2 {
+  display: none;
+}/*# sourceMappingURL=tablet-view.css.map */

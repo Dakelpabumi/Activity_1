@@ -1,0 +1,59 @@
+header {
+    margin: 2.375rem 4.625rem 4.625rem 3.5rem;
+}
+
+.hero {
+    margin: 0 2.25rem 4.5rem 2.25rem;
+    .hero-text {
+        margin-bottom: 40px;
+        h1 {
+            font-weight: 800;
+            font-size: 65px;
+            line-height: 71px;
+            text-align: center;
+        }
+        p {
+            font-size: 30px;
+            line-height: 37.71px;
+            margin: auto;
+        }
+    }
+    .hero-app-btns {
+        flex-flow: row wrap;
+        gap: 28px;
+        margin-bottom: 48px;
+    }
+    .hero-img {
+        margin: 0 auto;
+    }
+}
+
+.how-it-works {
+    gap: 78px;
+
+    .how-it-works-text {
+        margin: 0 94px 0 94px;
+        display: flex;
+        flex-flow: column wrap;
+        h2 {
+            font-size: 42px;
+            line-height: 50.4px;
+            margin: 0;
+        }
+        .how-it-works-description {
+            width: 100%;
+            margin: 0;
+            font-size: 20px;
+
+        }
+        .description-br1 {
+            display: inline;
+        }
+        .description-br2 {
+            display: none;
+        }
+
+    }
+
+    
+}

@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://use.typekit.net/scg5ylz.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+body {
+  background-color: #111111;
+  color: #FAF8F5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem 3rem 3.63375rem 1.5rem;
+}
+
+.hero .hero-text {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+  text-align: center;
+}
+.hero .hero-text h1 {
+  margin: 0 1.5rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+.hero .hero-text h1 .hero-span1 {
+  color: #E8951B;
+}
+.hero .hero-text h1 .hero-span2 {
+  color: #F1C077;
+}
+.hero .hero-text p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.885625rem;
+  text-align: center;
+  margin: 0 1.5rem 0 1.5625rem;
+  color: #FBEDD8;
+}
+.hero .hero-app-btns {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 5.0625rem;
+}
+.hero .hero-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 1.28375rem 4.5rem 0.75rem;
+}
+
+.how-it-works {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 8.5625rem;
+}
+.how-it-works h2 {
+  font-weight: 900;
+  font-size: 2.625rem;
+  line-height: 3.15rem;
+  text-align: center;
+  color: #FBEDD8;
+  margin: 0 1.75rem 1rem 1.375rem;
+}
+.how-it-works h2 span {
+  color: #E79316;
+}
+.how-it-works .how-it-works-description {
+  color: #FBEDD8;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-align: center;
+  margin: 0 1.5rem 4.5625rem 1.375rem;
+}
+.how-it-works .description-br1 {
+  display: none;
+}
+.how-it-works .cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4.125rem;
+}
+.how-it-works .cards .how-it-works-card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1.5rem;
+  gap: 1.25rem;
+}
+.how-it-works .cards .how-it-works-card h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #F1C077;
+}
+.how-it-works .cards .how-it-works-card .card-text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5625rem;
+}
+.how-it-works .cards .how-it-works-card .card-text .card-p {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 1.123rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #FBEDD8;
+}
+
+.sign-up {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 9.25rem;
+  margin: 0 1.5rem 4rem 1.5rem;
+}
+.sign-up .job-seeker, .sign-up .employer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5.4375rem;
+}
+.sign-up .job-seeker .sign-up-header, .sign-up .employer .sign-up-header {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: #FBEDD8;
+}
+.sign-up .job-seeker .sign-up-header span, .sign-up .employer .sign-up-header span {
+  color: #E8951B;
+}
+.sign-up .job-seeker .sign-up-header-text, .sign-up .employer .sign-up-header-text {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.sign-up .job-seeker .sign-up-steps, .sign-up .employer .sign-up-steps {
+  color: #898989;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 3.6875rem;
+}
+.sign-up .job-seeker .sign-up-steps .sign-up-step, .sign-up .employer .sign-up-steps .sign-up-step {
+  position: relative;
+  display: inline-block;
+  gap: 0.75rem;
+}
+.sign-up .job-seeker .sign-up-steps .sign-up-step .sign-up-step-header, .sign-up .employer .sign-up-steps .sign-up-step .sign-up-step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sign-up .job-seeker .sign-up-steps .sign-up-step .sign-up-step-header :hover, .sign-up .employer .sign-up-steps .sign-up-step .sign-up-step-header :hover {
+  text-decoration: underline;
+}
+.sign-up .job-seeker .sign-up-steps .sign-up-step .sign-up-step-header.active .sign-up-step-title, .sign-up .employer .sign-up-steps .sign-up-step .sign-up-step-header.active .sign-up-step-title {
+  color: #E8951B;
+}
+.sign-up .job-seeker .sign-up-steps .sign-up-step .sign-up-step-header .sign-up-step-title, .sign-up .employer .sign-up-steps .sign-up-step .sign-up-step-header .sign-up-step-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  cursor: pointer;
+}
+.sign-up .job-seeker .sign-up-steps .sign-up-step .sign-up-step-header .sign-up-step-title :focus, .sign-up .employer .sign-up-steps .sign-up-step .sign-up-step-header .sign-up-step-title :focus {
+  color: #E8951B;
+}
+.sign-up .job-seeker .sign-up-steps .sign-up-step .sign-up-step-header .sign-up-step-icon, .sign-up .employer .sign-up-steps .sign-up-step .sign-up-step-header .sign-up-step-icon {
+  width: 17.2888755798px;
+  height: 10.8563337326px;
+  cursor: pointer;
+}
+.sign-up .job-seeker .sign-up-steps .sign-up-step .sign-up-image, .sign-up .employer .sign-up-steps .sign-up-step .sign-up-image {
+  display: none;
+  gap: 1.25rem;
+}
+.sign-up .job-seeker .sign-up-steps .sign-up-step .sign-up-image p, .sign-up .employer .sign-up-steps .sign-up-step .sign-up-image p {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2rem;
+}
+.sign-up .job-seeker .sign-up-steps .sign-up-step .show, .sign-up .employer .sign-up-steps .sign-up-step .show {
+  display: flex;
+  flex-flow: column wrap;
+}
+.sign-up .job-seeker .sign-up-steps .sign-up-step .show .dropbtn, .sign-up .employer .sign-up-steps .sign-up-step .show .dropbtn {
+  color: #E8951B;
+}
+
+.download-app {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 0.6875rem;
+  margin: 0 1.5rem 3rem 1.5rem;
+  border: 1px solid #4A4A4A;
+  border-radius: 5rem;
+  background: linear-gradient(180deg, #131313 0%, #000000 100%);
+}
+.download-app .app-text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding-top: 3.5rem;
+  text-align: center;
+  gap: 0.9375rem;
+  margin-bottom: 0.6875rem;
+}
+.download-app .app-text h1 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+  color: #F1C077;
+}
+.download-app .app-text h1 span {
+  color: #E79316;
+}
+.download-app .app-text p {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.download-app .app-text .app-buttons {
+  padding-top: 1.3125rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+  background-image: url("Image_Assets/Desktop_Assets/desktop-bg-swirls.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.get-in-touch .touch-text {
+  margin: 8.25rem 1.5rem 131.96px 1.5rem;
+}
+.get-in-touch .touch-text h2 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2.1rem;
+  color: #E8951B;
+  text-align: center;
+}
+.get-in-touch .touch-text p {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2rem;
+  color: #FBEDD8;
+  text-align: center;
+}
+.get-in-touch .touch-text form {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1rem;
+}
+.get-in-touch .touch-text form input {
+  width: 100%;
+  height: 65.478263855px;
+  border-radius: 7.83px;
+  padding-top: 11.74px;
+  padding-bottom: 11.74px;
+  padding-left: 30px;
+  background: #333332;
+  border: 1.3px solid #868686;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 23.48px;
+  line-height: 41.74px;
+  color: #B4B4B4;
+}
+.get-in-touch .touch-text form input:focus {
+  border: 1.3px solid #E8951B;
+}
+.get-in-touch .touch-text form button {
+  width: 100%;
+  margin-top: 14.57px;
+  height: 73.0434799194px;
+  border-radius: 130.43px;
+  background: linear-gradient(180deg, #ECA63D 0%, #E68C07 100%);
+  font-weight: 800;
+  font-size: 22.17px;
+  line-height: 28.7px;
+  text-align: center;
+}
+
+footer {
+  background-color: #262626;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+footer div {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0 1.8125rem 0 1.8125rem;
+}
+footer div a {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: white;
+  text-align: center;
+  text-decoration: none !important;
+}/*# sourceMappingURL=style.css.map */

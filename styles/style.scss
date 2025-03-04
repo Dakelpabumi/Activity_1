@@ -1,0 +1,392 @@
+@import 'common';
+
+// Mobile First Styles
+body {
+    background-color: $background-color;
+    color: $font-color;
+    margin: 0;
+    padding: 0;
+}
+
+// Header styles
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 3rem 3.63375rem 1.5rem;
+}
+
+// Hero section styles
+.hero {
+    .hero-text {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 1rem;
+        margin-bottom: 2.25rem;
+        text-align: center;
+
+        h1 {
+            margin: 0 1.5rem;
+            font-weight: 700;
+            font-size: 2.5rem; // 40px / 16px = 2.5rem
+            line-height: 3rem; // 48px / 16px = 3rem
+
+            .hero-span1 {
+                color: $primary-color;
+            }
+            .hero-span2 {
+                color: $secondary-color;
+            }
+        }
+
+        p {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+            font-size: 1.5rem; // 24px / 16px = 1.5rem
+            line-height: 1.885625rem; // 30.17px / 16px ≈ 1.885625rem
+            text-align: center;
+            margin: 0 1.5rem 0 1.5625rem;
+            color: $text-color;
+        }
+    }
+
+    .hero-app-btns {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 5.0625rem;
+    }
+
+    .hero-img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 1.28375rem 4.5rem 0.75rem;
+    }
+}
+
+// How it works section styles
+.how-it-works {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 8.5625rem;
+    h2 {
+        font-weight: 900;
+        font-size: 2.625rem;
+        line-height: 3.15rem;
+        text-align: center;
+        color: $text-color;
+        margin: 0 1.75rem 1rem 1.375rem ;
+
+        span {
+            color: #E79316;
+        }
+    }
+    .how-it-works-description {
+        color: $text-color;
+        font-family: Source Sans Pro;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: center;
+        margin: 0 1.5rem 4.5625rem 1.375rem;
+    }
+    .description-br1 {
+        display: none;
+    }
+
+    .cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4.125rem;
+
+        .how-it-works-card {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0 1.5rem;
+            gap: 1.25rem;
+    
+            h3 {
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 2.4rem;
+                color: $secondary-color;
+            }
+
+            .card-text {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5625rem;
+
+                .card-p {
+                    font-family: Source Sans Pro;
+                    font-weight: 400;
+                    font-size: 1.123rem;
+                    line-height: 2rem;
+                    text-align: center;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+
+    
+}
+
+//Sign up section styles
+.sign-up {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 9.25rem;
+    margin: 0 1.5rem 4rem 1.5rem;
+    
+    .job-seeker, .employer {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5.4375rem;
+        .sign-up-header {
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            text-align: center;
+            color: $text-color;
+             span {
+                color: $primary-color;
+             }
+        }
+        .sign-up-header-text {
+            font-family: Source Sans Pro;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        
+        .sign-up-steps {
+            color: $text-inactive-color;
+            display: flex;
+            flex-flow: column wrap;
+            gap: 3.6875rem;
+    
+            .sign-up-step {
+                position: relative;
+                display: inline-block;
+                gap: 0.75rem; 
+    
+                .sign-up-step-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    :hover {
+                        text-decoration: underline;
+                    }
+                    &.active .sign-up-step-title {
+                        color: $primary-color;
+                    }
+                    .sign-up-step-title {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 28.8px;
+                        cursor: pointer;
+                        :focus {
+                            color: $primary-color;
+                        } 
+                    }
+                    .sign-up-step-icon {
+                        width: 17.28887557983405px;
+                        height: 10.856333732605021px;
+                        cursor: pointer;
+                    }
+                }
+                .sign-up-image {
+                    display: none;
+                    gap: 1.25rem;
+                    p {
+                        font-family: Source Sans Pro;
+                        font-weight: 400;
+                        font-size: 1.375rem;
+                        line-height: 2rem;
+                    }
+                }
+                .show {
+                    display: flex;
+                    flex-flow: column wrap;
+                    .dropbtn {
+                        color: $primary-color;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+// Download app section styles
+.download-app {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 0.6875rem;
+    margin: 0 1.5rem 3rem 1.5rem;
+    border: 1px solid #4A4A4A;
+    border-radius: 5rem;
+    background: linear-gradient(180deg, #131313 0%, #000000 100%);
+
+    .app-text {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        padding-top: 3.5rem;
+        text-align: center;
+        gap: 0.9375rem;
+        margin-bottom: 0.6875rem;
+
+        h1 {
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 42px;
+            text-align: center;
+            color: $secondary-color;
+            span {
+                color: #E79316;
+
+            }
+        }
+        p {
+            font-family: Source Sans Pro;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        .app-buttons {
+            padding-top: 1.3125rem;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center ;
+            gap: 1.25rem
+        }
+    }
+    
+}
+
+//Get in touch section styles
+.get-in-touch {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    background-image: url('Image_Assets/Desktop_Assets/desktop-bg-swirls.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .touch-text {
+        margin: 8.25rem 1.5rem 131.96px 1.5rem;
+        h2 {
+            font-weight: 700;
+            font-size: 1.75rem;
+            line-height: 2.1rem;
+            color: $primary-color;
+            text-align: center;
+        }
+        p {
+            font-family: Source Sans Pro;
+            font-weight: 400;
+            font-size: 1.375rem;
+            line-height: 2rem;
+            color:$text-color;
+            text-align: center;
+        }
+        form {
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            gap: 1rem;
+
+            input {
+                width: 100%;
+                height: 65.47826385498047px;
+                border-radius: 7.83px;
+                padding-top: 11.74px;
+                padding-bottom: 11.74px;
+                padding-left: 30px;
+                background: #333332;
+                border: 1.3px solid #868686;
+                font-family: Source Sans Pro;
+                font-weight: 400;
+                font-size: 23.48px;
+                line-height: 41.74px;
+                color: #B4B4B4;
+
+                &:focus {
+                    border: 1.3px solid $primary-color;
+                }
+            }
+            button {
+                width: 100%;
+                margin-top: 14.57px;
+                height: 73.0434799194336px;
+                border-radius: 130.43px;
+                background: linear-gradient(180deg, #ECA63D 0%, #E68C07 100%);
+                font-weight: 800;
+                font-size: 22.17px;
+                line-height: 28.7px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//Footer section styles
+footer {
+    background-color:#262626;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+
+    div {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        gap:2.5rem;
+        padding: 0 1.8125rem 0 1.8125rem;
+
+
+        a {
+            font-family: Source Sans Pro;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: white;
+            text-align: center;
+            text-decoration: none !important;
+        }
+    }
+
+}
+
