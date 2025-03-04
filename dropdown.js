@@ -1,6 +1,6 @@
 function dropdown(event) {
     // Prevent the default action
-    event.preventDefault();
+    // event.preventDefault();
 
     // Get the clicked header
     var header = event.currentTarget;

@@ -73,7 +73,7 @@
                 <h3 class="sign-up-header">Sign Up <span>as a Job Seeker</span></h3>
                 <p class="sign-up-header-text">Easily find tailored jobs and navigate a streamlined application process.</p>
             </div>
-            <div>
+            <div class="sign-up-steps-container">
                 <div class="sign-up-steps">
                     <div class="sign-up-step">
                         <div class="sign-up-step-header" onclick="dropdown()">
@@ -86,19 +86,25 @@
                         </div>
                     </div>
                     <div class="sign-up-step">
-                        <div class="sign-up-step-header">
-                            <h4 class="sign-up-step-title">Discover Opportunities</h4>
-                            <img src="Image_Assets\Mobile_Assets\mobile-tab-vector.svg" alt="vector icon" class="sign-up-step-icon">
+                        <div class="sign-up-step-header" onclick="dropdown()">
+                            <h4 class="sign-up-step-title dropbtn">Discover Opportunities</h4>
+                            <img src="Image_Assets\Mobile_Assets\mobile-tab-vector.svg" alt="vector icon" class="sign-up-step-icon dropbtn">
                         </div>
-                        <p class="sign-up-step-description">Explore curated job listings matching your skills and preferences.</p>
+                        <div id="dropdown-content" class="sign-up-image">
+                            <p class="sign-up-step-description">Explore curated job listings matching your skills and preferences.</p>
+                            <img src="Image_Assets\Mobile_Assets\mobile-tab-job-seeker-oportunities.svg" alt="job seeker opportunities">
+                        </div>
                     </div>
                     <div class="sign-up-step">
-                        <div class="sign-up-step-header">
-                            <h4 class="sign-up-step-title">Apply with Ease</h4>
-                            <img src="Image_Assets\Mobile_Assets\mobile-tab-vector.svg" alt="vector icon" class="sign-up-step-icon">
+                        <div class="sign-up-step-header" onclick="dropdown()">
+                            <h4 class="sign-up-step-title dropbtn">Apply with Ease</h4>
+                            <img src="Image_Assets\Mobile_Assets\mobile-tab-vector.svg" alt="vector icon" class="sign-up-step-icon dropbtn">
                         </div>
-                        <p class="sign-up-step-description">Submit applications effortlessly and receive real-time updates on their status.</p>
-                    </div>
+                        <div id="dropdown-content" class="sign-up-image">
+                            <p class="sign-up-step-description">Submit applications effortlessly and receive real-time updates on their status.</p>
+                            <img src="Image_Assets\Mobile_Assets\mobile-tab-job-seeker-application.svg" alt="job seeker application">
+                        </div>
+                        </div>
                 </div>
                 
             </div>
@@ -110,26 +116,32 @@
                 <h3 class="sign-up-header">Sign Up as <span>an Employer</span></h3>
                 <p class="sign-up-header-text">Efficient candidate discovery and simplified application management.</p>
             </div>
-            <div>
+            <div class="sign-up-steps-container">
                 <div class="sign-up-steps">
                     <div class="sign-up-step">
-                        <div class="sign-up-step-header">
-                            <h4 class="sign-up-step-title">Attract Skilled Workers</h4>
-                            <img src="Image_Assets\Mobile_Assets\mobile-tab-vector.svg" alt="vector icon" class="sign-up-step-icon">
+                        <div class="sign-up-step-header" onclick="dropdown()">
+                            <h4 class="sign-up-step-title dropbtn">Attract Skilled Workers</h4>
+                            <img src="Image_Assets\Mobile_Assets\mobile-tab-vector.svg" alt="vector icon" class="sign-up-step-icon dropbtn">
                         </div>
-                        <p class="sign-up-step-description">Showcase your company and find skilled workers matching your job requirements.</p>
+                        <div id="dropdown-content" class="sign-up-image">
+                            <p class="sign-up-step-description">Showcase your company and find skilled workers matching your job requirements.</p>
+                            <img src="Image_Assets\Mobile_Assets\mobile-tab-employer-attract-workers.svg" alt="Employer attract workers">
+                        </div>
                     </div>
                     <div class="sign-up-step">
-                        <div class="sign-up-step-header">
-                            <h4 class="sign-up-step-title">Post Job Opportunities</h4>
-                            <img src="Image_Assets\Mobile_Assets\mobile-tab-vector.svg" alt="vector icon" class="sign-up-step-icon">
+                        <div class="sign-up-step-header" onclick="dropdown()">
+                            <h4 class="sign-up-step-title dropbtn">Post Job Opportunities</h4>
+                            <img src="Image_Assets\Mobile_Assets\mobile-tab-vector.svg" alt="vector icon" class="sign-up-step-icon dropbtn">
                         </div>
-                        <p class="sign-up-step-description">Create detailed job listings, specifying responsibilities, licenses/documents, and salary.</p>
+                        <div id="dropdown-content" class="sign-up-image">
+                            <p class="sign-up-step-description">Create detailed job listings, specifying responsibilities, licenses/documents, and salary.</p>
+                            <img src="Image_Assets\Mobile_Assets\mobile-tab-employer-post-jobs.svg" alt="Employer Post Jobs">
+                        </div>
                     </div>
                     <div class="sign-up-step">
                         <div class="sign-up-step-header" onclick="dropdown()">
                             <h4 class="sign-up-step-title dropbtn">Simplified Hiring</h4>
-                            <img src="Image_Assets\Mobile_Assets\mobile-tab-vector.svg" alt="vector icon" class="sign-up-step-icon">
+                            <img src="Image_Assets\Mobile_Assets\mobile-tab-vector.svg" alt="vector icon" class="sign-up-step-icon dropbtn">
                         </div>
                         <div id="dropdown-content" class="sign-up-image">
                             <p class="sign-up-step-description">Review and manage applications seamlessly, extending job offers to selected candidates.</p>
