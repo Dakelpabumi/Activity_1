@@ -210,7 +210,12 @@ header {
   cursor: pointer;
 }
 .sign-up .job-seeker .sign-up-steps .sign-up-step .sign-up-image, .sign-up .employer .sign-up-steps .sign-up-step .sign-up-image {
-  display: none;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out, opacity 1s ease-out;
+  display: flex;
+  flex-flow: column wrap;
   gap: 1.25rem;
 }
 .sign-up .job-seeker .sign-up-steps .sign-up-step .sign-up-image p, .sign-up .employer .sign-up-steps .sign-up-step .sign-up-image p {
@@ -219,9 +224,13 @@ header {
   font-size: 1.375rem;
   line-height: 2rem;
 }
+.sign-up .job-seeker .sign-up-steps .sign-up-step .sign-up-image img, .sign-up .employer .sign-up-steps .sign-up-step .sign-up-image img {
+  width: 100%;
+  height: auto;
+}
 .sign-up .job-seeker .sign-up-steps .sign-up-step .show, .sign-up .employer .sign-up-steps .sign-up-step .show {
-  display: flex;
-  flex-flow: column wrap;
+  opacity: 1;
+  max-height: 1000px;
 }
 .sign-up .job-seeker .sign-up-steps .sign-up-step .show .dropbtn, .sign-up .employer .sign-up-steps .sign-up-step .show .dropbtn {
   color: #E8951B;
