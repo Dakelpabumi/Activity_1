@@ -69,9 +69,24 @@ header {
 .sign-up {
     width: 334px;
     margin: 0 auto;
+    margin-bottom: 88px;
     .job-seeker {
         h3 {
             margin-bottom: 20px;
         }
+    }
+}
+
+.download-app {
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.get-in-touch {
+    padding: 0;
+    overflow: hidden;
+
+    .touch-br {
+        display: inline;
     }
 }

@@ -258,9 +258,11 @@ header {
 
 // Download app section styles
 .download-app {
+    max-width: 456px;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    justify-content: center;
     gap: 0.6875rem;
     margin: 0 1.5rem 3rem 1.5rem;
     border: 1px solid #4A4A4A;
@@ -316,7 +318,11 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    .touch-br {
+        display: none;
+    }
     .touch-text {
+        max-width: 600px;
         margin: 8.25rem 1.5rem 131.96px 1.5rem;
         h2 {
             font-weight: 700;
@@ -332,6 +338,7 @@ header {
             line-height: 2rem;
             color:$text-color;
             text-align: center;
+            margin-bottom: 26px;
         }
         form {
             width: 100%;
