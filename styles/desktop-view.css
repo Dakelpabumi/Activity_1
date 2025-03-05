@@ -1,0 +1,78 @@
+body {
+  background-color: #141413;
+}
+
+header {
+  background-color: #111111;
+  padding: 22px 146px 0 150px;
+}
+header nav .bi {
+  display: none;
+}
+header nav .nav-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 44px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  list-style: none;
+}
+header nav .nav-links a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+header nav .nav-links a:hover {
+  color: #F1C077;
+}
+
+.hero {
+  background-color: #111111;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 388px;
+  gap: 40px;
+}
+.hero .hero-container {
+  padding-top: 188px;
+  padding-left: 130px;
+  padding-right: 630px;
+  position: relative;
+  z-index: 1;
+}
+.hero .hero-container .hero-text h1 {
+  text-align: start;
+  margin: 0;
+}
+.hero .hero-container .hero-text p {
+  margin: 0;
+  text-align: start;
+}
+.hero .hero-container .hero-text p .hero-text-br {
+  display: inline;
+}
+.hero .hero-container .hero-app-btns {
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+.hero .hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 100%;
+  height: auto;
+  padding-left: 742px;
+  padding-right: 107px;
+  display: block;
+}
+.hero .hero-img .hero-img-mobile {
+  display: none;
+}
+.hero .hero-img .hero-img-desktop {
+  display: block;
+}/*# sourceMappingURL=desktop-view.css.map */

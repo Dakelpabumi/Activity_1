@@ -2,7 +2,7 @@
 
 // Mobile First Styles
 body {
-    background-color: $background-color;
+    background-color: #141413;
     color: $font-color;
     margin: 0;
     padding: 0;
@@ -10,18 +10,25 @@ body {
 
 // Header styles
 header {
+    background-color: #111111;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 2.5rem 3rem 3.63375rem 1.5rem;
+    padding: 2.5rem 3rem 3.63375rem 1.5rem;
     .header-image2 {
         display: none;
+    }
+    nav {
+        .nav-links {
+            display: none;
+        }
     }
 }
 
 // Hero section styles
 .hero {
+    background-color: #111111;
     .hero-text {
         display: flex;
         flex-flow: column wrap;
@@ -44,6 +51,9 @@ header {
         }
 
         p {
+            .hero-text-br {
+                display: none;
+            }
             font-family: 'Source Sans Pro', sans-serif;
             font-weight: 400;
             font-size: 1.5rem; // 24px / 16px = 1.5rem
@@ -64,6 +74,9 @@ header {
     }
 
     .hero-img {
+        .hero-img-desktop {
+            display: none;
+        }
         display: flex;
         justify-content: center;
         width: 100%;
@@ -260,6 +273,12 @@ header {
 }
 
 // Download app section styles
+.download-app-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem 3rem 1.5rem;
+
+}
 .download-app {
     max-width: 456px;
     display: flex;
@@ -267,7 +286,6 @@ header {
     align-items: center;
     justify-content: center;
     gap: 0.6875rem;
-    margin: 0 1.5rem 3rem 1.5rem;
     border: 1px solid #4A4A4A;
     border-radius: 5rem;
     background: linear-gradient(180deg, #131313 0%, #000000 100%);
@@ -317,7 +335,7 @@ header {
     flex-flow: column wrap;
     align-items: center;
     text-align: center;
-    background-image: url('Image_Assets/Desktop_Assets/desktop-bg-swirls.svg');
+    background-image: url(Image_Assets\Desktop_Assets\desktop-bg-swirls.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

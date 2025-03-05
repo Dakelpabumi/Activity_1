@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles\style.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles\tablet-view.css">
+    <link rel="stylesheet" media="screen and (min-width: 1440px)"  href="styles\desktop-view.css">
     <title>Heavy Duty Help</title>
 </head>
 <body>
@@ -14,6 +15,12 @@
         <img class="header-image1" src="Image_Assets\Mobile_Assets\mobile-hdh-logo.svg" alt="Heavy Duty House Logo" >
         <img class="header-image2" src="Image_Assets\Desktop_Assets\desktop-hdh-logo.svg" alt="Heavy Duty House Logo">
         <nav>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="#">Home</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
             <svg xmlns="http://www.w3.org/2000/svg" width="1.375rem" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
             </svg>
@@ -22,16 +29,19 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-text">
-            <h1><span class="hero-span1">Tailor Your Career,<br></span> <span class="hero-span2"> Your Way, Every Day.</span></h1>
-            <p>Effortless Job Search, Stress-Free Hiring. Find Your Perfect Fit Now</p>
-        </div>
-        <div class="hero-app-btns">
-            <a href="#"><img src="Image_Assets\Mobile_Assets\mobile-icon-app-store.svg" alt="App Store Icon"></a>
-            <a href="#"><img src="Image_Assets\Mobile_Assets\mobile-icon-google-play.svg" alt="Google Play Icon"></a>
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1><span class="hero-span1">Tailor Your Career,<br></span> <span class="hero-span2"> Your Way, Every Day.</span></h1>
+                <p>Effortless Job Search, Stress-Free Hiring. <br class="hero-text-br"> Find Your Perfect Fit Now</p>
+            </div>
+            <div class="hero-app-btns">
+                <a href="#"><img src="Image_Assets\Mobile_Assets\mobile-icon-app-store.svg" alt="App Store Icon"></a>
+                <a href="#"><img src="Image_Assets\Mobile_Assets\mobile-icon-google-play.svg" alt="Google Play Icon"></a>
+            </div>
         </div>
         <div class="hero-img">
-            <img src="Image_Assets\Mobile_Assets\mobile-banner-hdh-worker.svg" alt="Image of Worker">
+            <img class="hero-img-mobile" src="Image_Assets\Mobile_Assets\mobile-banner-hdh-worker.svg" alt="Image of Worker">
+            <img class="hero-img-desktop"  src="Image_Assets\Desktop_Assets\desktop-banner-hdh-worker.svg" alt="Image of a Worker">
         </div>
     </section>
 
@@ -155,6 +165,7 @@
     </section>
 
     <!-- Download App Section -->
+    <div class="download-app-container">
     <section class="download-app">
         <div class="app-text">
             <h1>Empowering Careers <span>& Simplifying Hiring</span></h1>
@@ -168,6 +179,7 @@
             <img src="Image_Assets\Mobile_Assets\mobile-cta-agriculture.svg" alt="Image of a Man Smiling">
         </div>
     </section>
+    </div>
 
     <!-- Get In Touch Section -->
     <section class="get-in-touch">
