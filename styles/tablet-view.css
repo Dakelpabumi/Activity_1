@@ -1,6 +1,12 @@
 header {
   margin: 2.375rem 4.625rem 4.625rem 3.5rem;
 }
+header .header-image1 {
+  display: none;
+}
+header .header-image2 {
+  display: block;
+}
 
 .hero {
   margin: 0 2.25rem 4.5rem 2.25rem;

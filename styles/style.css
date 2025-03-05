@@ -21,6 +21,9 @@ header {
   align-items: center;
   margin: 2.5rem 3rem 3.63375rem 1.5rem;
 }
+header .header-image2 {
+  display: none;
+}
 
 .hero .hero-text {
   display: flex;
