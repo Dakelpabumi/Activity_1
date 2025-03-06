@@ -108,6 +108,34 @@ header nav .nav-links a:hover {
   width: 100%;
 }
 
+.sign-up {
+  margin: 0;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 184.1px;
+}
+.sign-up .job-seeker, .sign-up .employer {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.sign-up .job-seeker .sign-up-steps-container, .sign-up .employer .sign-up-steps-container {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.sign-up .job-seeker .sign-up-steps-container .sign-up-steps, .sign-up .employer .sign-up-steps-container .sign-up-steps {
+  margin: 0;
+  padding: 75.45px 153px 75.45px 230px;
+}
+.sign-up .job-seeker .sign-up-steps-container .sign-up-steps .sign-up-step, .sign-up .employer .sign-up-steps-container .sign-up-steps .sign-up-step {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .download-app-container {
   z-index: 0;
   position: relative;

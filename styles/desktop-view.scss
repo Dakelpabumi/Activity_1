@@ -113,20 +113,36 @@ header {
 }
 
 .sign-up {
-    // margin: 0;
-    // width: 100%;
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, 1fr);
+    margin: 0;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    gap: 184.1px;
 
-    // .job-seeker, .employer {
-    //     display: block;
+    .job-seeker, .employer {
+        display: block;
+        margin: 0;
+        padding: 0;
+
+        .sign-up-steps-container {
+            display: block;
+            margin: 0;
+            padding: 0;
+            .sign-up-steps {
+                margin: 0;
+                padding: 75.45px 153px 75.45px 230px;
+                .sign-up-step {
+                    margin: 0;
+                    padding: 0;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
 
 
-    //     .sign-up-steps {
-    //         display: flex;
-    //         flex-flow: row wrap;
-    //     }
-    // }
+       
+    }
 }
 
 .download-app-container {
