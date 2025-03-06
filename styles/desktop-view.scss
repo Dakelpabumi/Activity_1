@@ -30,6 +30,7 @@ header {
         }
     }
 }
+
 .hero {
     background-color: #111111;
     display: flex;
@@ -81,5 +82,32 @@ header {
 }
 
 .how-it-works {
+    gap: 127px;
+    padding-bottom: 203px;
+    .how-it-works-text {
+        justify-content: center;
+        margin: 0 430px;
+        h2 {
+            text-align: start;
+            width: 100%;
+        }
+        .how-it-works-description {
+            font-size: 20px; // Set the font size to 20px instead of 22px 
+            line-height: 32px;
+            text-align: start;
+        }
+    }
+    margin: 0;
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, max(333.3px));
+        gap: 88px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.sign-up {
     
 }

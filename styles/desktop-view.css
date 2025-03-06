@@ -75,4 +75,31 @@ header nav .nav-links a:hover {
 }
 .hero .hero-img .hero-img-desktop {
   display: block;
+}
+
+.how-it-works {
+  gap: 127px;
+  padding-bottom: 203px;
+  margin: 0;
+}
+.how-it-works .how-it-works-text {
+  justify-content: center;
+  margin: 0 430px;
+}
+.how-it-works .how-it-works-text h2 {
+  text-align: start;
+  width: 100%;
+}
+.how-it-works .how-it-works-text .how-it-works-description {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: start;
+}
+.how-it-works .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 333.3px);
+  gap: 88px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }/*# sourceMappingURL=desktop-view.css.map */

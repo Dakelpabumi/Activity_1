@@ -120,11 +120,11 @@ header {
     }
 
     .cards {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 4.125rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 4.125rem;
 
         .how-it-works-card {
             display: flex;

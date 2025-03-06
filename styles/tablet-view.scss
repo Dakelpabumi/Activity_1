@@ -70,7 +70,11 @@ header {
         }
     }
     .cards {
-        width:333.296630859375px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, max(333.3px));
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         gap: 48px;
         .how-it-works-card {
             margin: 0;

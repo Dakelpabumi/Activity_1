@@ -70,7 +70,11 @@ header .header-image2 {
   display: none;
 }
 .how-it-works .cards {
-  width: 333.2966308594px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 333.3px);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   gap: 48px;
 }
 .how-it-works .cards .how-it-works-card {
