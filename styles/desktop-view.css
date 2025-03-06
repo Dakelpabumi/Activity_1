@@ -6,7 +6,10 @@ header {
   background-color: #111111;
   padding: 22px 146px 0 150px;
 }
-header nav .bi {
+header nav .container {
+  display: block;
+}
+header nav .hamburger {
   display: none;
 }
 header nav .nav-links {
@@ -78,6 +81,7 @@ header nav .nav-links a:hover {
 }
 
 .how-it-works {
+  margin: 0 auto;
   gap: 127px;
   padding-bottom: 203px;
   margin: 0;
@@ -97,9 +101,101 @@ header nav .nav-links a:hover {
 }
 .how-it-works .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 333.3px);
+  grid-template-columns: repeat(auto-fit, 333.3px);
   gap: 88px;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.download-app-container {
+  z-index: 0;
+  position: relative;
+  padding-bottom: 141px;
+}
+.download-app-container .download-app {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0;
+  z-index: 0;
+  position: relative;
+  min-width: 1180px;
+  min-height: 500px;
+}
+.download-app-container .download-app .app-text {
+  margin: 0;
+  width: 560px;
+  z-index: 0;
+  padding: 94px 0 116px 97px;
+}
+.download-app-container .download-app .app-text h1 {
+  text-align: start;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 100%;
+  text-align: start;
+}
+.download-app-container .download-app .app-text h1 .app-text-br {
+  display: inline;
+}
+.download-app-container .download-app .app-text p {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: start;
+  color: #FBEDD8;
+}
+.download-app-container .download-app .app-text .app-buttons {
+  flex-flow: row wrap;
+  gap: 28px;
+  justify-content: flex-start;
+}
+.download-app-container .download-app .app-image {
+  z-index: 0;
+  position: relative;
+}
+.download-app-container .download-app .app-image .app-image-mobile {
+  display: none;
+}
+.download-app-container .download-app .app-image .app-image-desktop {
+  display: block;
+  overflow: visible;
+  z-index: 1;
+  width: 433px;
+  height: 572px;
+  top: 0;
+  left: 0;
+}
+
+.get-int-touch .touch-text {
+  min-width: 600;
+  min-height: 486.0434875488;
+  margin: 0 auto;
+  margin-bottom: 92.96px;
+}
+
+footer {
+  flex-flow: row wrap;
+  padding: 18px 78px 18px 118px;
+  height: 84px;
+  gap: 218px;
+}
+footer .footer-image1 {
+  display: none;
+}
+footer .footer-image2 {
+  display: block;
+}
+footer div {
+  flex-flow: row wrap;
+  padding: 0;
+  gap: 0;
+}
+footer div .footer-a1 {
+  padding-right: 83px;
+}
+footer div .footer-a2 {
+  padding-right: 96px;
 }/*# sourceMappingURL=desktop-view.css.map */

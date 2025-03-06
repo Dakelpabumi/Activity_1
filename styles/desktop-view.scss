@@ -6,7 +6,10 @@ header {
     background-color: #111111;
     padding: 22px 146px 0 150px;
     nav {
-        .bi {
+        .container {
+            display: block;
+        }
+        .hamburger {
             display: none;
         }
         .nav-links {
@@ -82,6 +85,7 @@ header {
 }
 
 .how-it-works {
+    margin: 0 auto;
     gap: 127px;
     padding-bottom: 203px;
     .how-it-works-text {
@@ -100,7 +104,7 @@ header {
     margin: 0;
     .cards {
         display: grid;
-        grid-template-columns: repeat(auto-fill, max(333.3px));
+        grid-template-columns: repeat(auto-fit, max(333.3px));
         gap: 88px;
         justify-content: center;
         align-items: center;
@@ -109,5 +113,123 @@ header {
 }
 
 .sign-up {
-    
+    // margin: 0;
+    // width: 100%;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, 1fr);
+
+    // .job-seeker, .employer {
+    //     display: block;
+
+
+    //     .sign-up-steps {
+    //         display: flex;
+    //         flex-flow: row wrap;
+    //     }
+    // }
 }
+
+.download-app-container {
+    z-index: 0;
+    position: relative;
+    padding-bottom: 141px;
+
+    .download-app {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0;
+        z-index: 0;
+        position: relative;
+        min-width: 1180px;
+        min-height: 500px;
+
+
+        .app-text {
+            margin: 0;
+            width: 560px;  
+            z-index: 0;
+            padding: 94px 0 116px 97px;
+            h1 {
+                text-align: start;
+                font-weight: 700;
+                font-size: 47px;
+                line-height: 100%;
+                text-align: start;
+                .app-text-br {
+                    display: inline;
+                }
+            }
+            p {
+                font-family: Source Sans Pro;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 32px;
+                text-align: start;
+                color: #FBEDD8;
+            }
+            .app-buttons {
+                flex-flow: row wrap;
+                gap: 28px;
+                justify-content: flex-start;
+
+            }
+
+        }
+
+        .app-image {
+            z-index: 0;
+            position: relative;
+
+            .app-image-mobile {
+                display: none;
+            }
+
+            .app-image-desktop {
+                display: block;
+                overflow: visible; // Ensure the image overflows the container
+                z-index: 1;
+                width: 433px; // Set the width of the image
+                height: 572px; // Set the height of the image
+                top: 0; // Position the image at the top of the container
+                left: 0; // Position the image at the left of the container
+            }
+        }
+    }
+}
+
+.get-int-touch {
+    .touch-text {
+        min-width: 600;
+        min-height: 486.0434875488281;
+        margin: 0 auto;
+        margin-bottom: 92.96px;
+    }
+}
+
+footer {
+    flex-flow: row wrap;
+    padding: 18px 78px 18px 118px;
+    height: 84px;
+    gap: 218px;
+    .footer-image1 {
+        display: none;
+    }
+    .footer-image2 {
+        display: block;
+    }
+
+    div {
+        flex-flow: row wrap;
+        padding: 0;
+        gap: 0;
+
+        .footer-a1 {
+            padding-right: 83px;
+        }
+        .footer-a2 {
+            padding-right: 96px;
+        }
+    }
+}
+

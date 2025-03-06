@@ -1,5 +1,9 @@
 @import 'common';
 
+html {
+    scroll-behavior: smooth;
+}
+
 // Mobile First Styles
 body {
     background-color: #141413;
@@ -19,12 +23,72 @@ header {
     .header-image2 {
         display: none;
     }
-    nav {
-        .nav-links {
-            display: none;
-        }
+    .nav-links {
+        display: none;
     }
-}
+    .container {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        }
+                  
+        .bar1, .bar2, .bar3 {
+            width: 22px;
+            height: 2px;
+            background-color: white;
+            margin: 6px 0;
+            transition: 0.4s;
+            }
+                  
+        .change .bar1 {
+            transform: translate(0, 5px) rotate(-45deg);
+            }
+                  
+        .change .bar2 {opacity: 0;}
+                  
+        .change .bar3 {
+            transform: translate(0, -11px) rotate(45deg);
+            }
+        }
+
+        .change {
+            .nav-links {
+                display: block;   
+            }
+            @media  screen  and (max-width:1439px) {
+                .nav-links {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #111111;
+                    position: fixed;
+                    top: 70px;
+                    right: 0;
+                    height: 15%;
+                    width: min(10em, 100%);
+                    z-index: 10;
+                    border: 1px solid#868686;
+                    border-radius: 10px;
+                    gap: 20px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 32px;
+                    letter-spacing: 1px;
+                    list-style: none;
+                    padding: 1rem;
+                    transition: top 300ms ease-out;
+                    a { 
+                        width: 100%;
+                        text-decoration: none;
+                        color: #FFFFFF;
+                        &:hover {
+                            color: #F1C077;
+                        }
+                    }
+                }
+            }
+        }
+        
+
 
 // Hero section styles
 .hero {
@@ -280,7 +344,7 @@ header {
 
 }
 .download-app {
-    max-width: 456px;
+    width: 456px;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -305,6 +369,9 @@ header {
             line-height: 42px;
             text-align: center;
             color: $secondary-color;
+            .app-text-br {
+                display: none;
+            }
             span {
                 color: #E79316;
 
@@ -325,6 +392,9 @@ header {
             align-items: center ;
             gap: 1.25rem
         }
+    }
+    .app-image-desktop {
+        display: none;
     }
     
 }
@@ -411,6 +481,9 @@ footer {
     gap: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 3rem;
+    .footer-image2 {
+        display: none;
+    }
 
     div {
         display: flex;

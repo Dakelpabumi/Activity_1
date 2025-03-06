@@ -8,6 +8,10 @@
   font-family: "Urbanist", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #141413;
   color: #FAF8F5;
@@ -26,8 +30,64 @@ header {
 header .header-image2 {
   display: none;
 }
-header nav .nav-links {
+header .nav-links {
   display: none;
+}
+header .container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+header .bar1, header .bar2, header .bar3 {
+  width: 22px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+header .change .bar1 {
+  transform: translate(0, 5px) rotate(-45deg);
+}
+header .change .bar2 {
+  opacity: 0;
+}
+header .change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.change .nav-links {
+  display: block;
+}
+@media screen and (max-width: 1439px) {
+  .change .nav-links {
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    height: 15%;
+    width: min(10em, 100%);
+    z-index: 10;
+    border: 1px solid #868686;
+    border-radius: 10px;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    list-style: none;
+    padding: 1rem;
+    transition: top 300ms ease-out;
+  }
+  .change .nav-links a {
+    width: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .change .nav-links a:hover {
+    color: #F1C077;
+  }
 }
 
 .hero {
@@ -260,7 +320,7 @@ header nav .nav-links {
 }
 
 .download-app {
-  max-width: 456px;
+  width: 456px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -286,6 +346,9 @@ header nav .nav-links {
   text-align: center;
   color: #F1C077;
 }
+.download-app .app-text h1 .app-text-br {
+  display: none;
+}
 .download-app .app-text h1 span {
   color: #E79316;
 }
@@ -303,6 +366,9 @@ header nav .nav-links {
   flex-flow: column wrap;
   align-items: center;
   gap: 1.25rem;
+}
+.download-app .app-image-desktop {
+  display: none;
 }
 
 .get-in-touch {
@@ -383,6 +449,9 @@ footer {
   gap: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 3rem;
+}
+footer .footer-image2 {
+  display: none;
 }
 footer div {
   display: flex;

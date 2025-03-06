@@ -15,15 +15,18 @@
         <img class="header-image1" src="Image_Assets\Mobile_Assets\mobile-hdh-logo.svg" alt="Heavy Duty House Logo" >
         <img class="header-image2" src="Image_Assets\Desktop_Assets\desktop-hdh-logo.svg" alt="Heavy Duty House Logo">
         <nav>
-            <ul class="nav-links">
-                <li class="nav-link"><a href="#">Home</a></li>
-                <li><a href="#">How It Works</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.375rem" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-            </svg>
+            <div class="container" onclick="toggleIcon(this)">
+                <div class="bar1 hamburger"></div>
+                <div class="bar2 hamburger"></div>
+                <div class="bar3 hamburger"></div>
+            
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li><a href="#how-it-works-section">How It Works</a></li>
+                    <li><a href="#sign-up-section">Features</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -46,7 +49,7 @@
     </section>
 
     <!-- How It Works Section -->
-    <section class="how-it-works">
+    <section id="how-it-works-section" class="how-it-works">
         <div class="how-it-works-text">
             <h2>How <span class="how-it-works-span">Heavy Duty Help</span> Works</h2>
             <p class="how-it-works-description">Job seekers and employers connect seamlessly through a<br class="description-br1"> smooth application process and user-friendly features to<br class="description-br1"> manage talent and careers. Effortlessly discover perfect-<br class="description-br1">fit positions <br class="description-br2"> with this platform.</p>
@@ -76,11 +79,11 @@
     </section>
 
     <!-- Sign Up Section -->
-    <section class="sign-up">
+    <section id="sign-up-section" class="sign-up">
 
         <!-- As a Job Seeker -->
         <div class="job-seeker">
-            <div>
+            <div class="sign-up-header-container">
                 <h3 class="sign-up-header">Sign Up <span>as a Job Seeker</span></h3>
                 <p class="sign-up-header-text">Easily find tailored jobs and navigate a streamlined application process.</p>
             </div>
@@ -166,19 +169,20 @@
 
     <!-- Download App Section -->
     <div class="download-app-container">
-    <section class="download-app">
-        <div class="app-text">
-            <h1>Empowering Careers <span>& Simplifying Hiring</span></h1>
-            <p>Download Now and Connect with Top Talents</p>
-            <div class="app-buttons">
-                <a href="#"><img src="Image_Assets\Mobile_Assets\mobile-icon-app-store.svg" alt="App Store Icon"></a>
-                <a href="#"><img src="Image_Assets\Mobile_Assets\mobile-icon-google-play.svg" alt="Google Play Icon"></a>
+        <section class="download-app">
+            <div class="app-text">
+                <h1>Empowering Careers <span><br class="app-text-br">& Simplifying Hiring</span></h1>
+                <p>Download Now and Connect with Top Talents</p>
+                <div class="app-buttons">
+                    <a href="#"><img src="Image_Assets\Mobile_Assets\mobile-icon-app-store.svg" alt="App Store Icon"></a>
+                    <a href="#"><img src="Image_Assets\Mobile_Assets\mobile-icon-google-play.svg" alt="Google Play Icon"></a>
+                </div>
             </div>
-        </div>
-        <div class="app-image">
-            <img src="Image_Assets\Mobile_Assets\mobile-cta-agriculture.svg" alt="Image of a Man Smiling">
-        </div>
-    </section>
+            <div class="app-image">
+                <img class="app-image-mobile" src="Image_Assets\Mobile_Assets\mobile-cta-agriculture.svg" alt="Image of a Man Smiling">
+                <img class="app-image-desktop" src="Image_Assets\Desktop_Assets\desktop-cta-agriculture.svg" alt="Image of a Man Smiling">
+            </div>
+        </section>
     </div>
 
     <!-- Get In Touch Section -->
@@ -199,15 +203,21 @@
 
     <!-- Footer Section -->
      <footer>
-        <img src="Image_Assets\Mobile_Assets\mobile-hdh-logo.svg" alt="">
+            <img class="footer-image1"  src="Image_Assets\Mobile_Assets\mobile-hdh-logo.svg" alt="">
+            <img class="footer-image2" src="Image_Assets\Desktop_Assets\desktop-hdh-logo.svg" alt="Heavy Duty House Logo">
         <div>
-            <a class="footer-a" style="text-decoration: none" href="#">Privacy Policy</a>
-            <a class="footer-a" style="text-decoration: none" href="#">Terms and Conditions</a>
-            <a class="footer-a" style="text-decoration: none" href="#">2024 Heavy Duty Help. All rights reserved.</a>
+            <a class="footer-a footer-a1" style="text-decoration: none" href="#">Privacy Policy</a>
+            <a class="footer-a footer-a2" style="text-decoration: none" href="#">Terms and Conditions</a>
+            <a class="footer-a footer-a3" style="text-decoration: none" href="#">2024 Heavy Duty Help. All rights reserved.</a>
         </div>
      </footer>
     
      <!-- Include the JavaScript file -->
     <script src="dropdown.js"></script>
+    <script>
+        function toggleIcon(x) {
+          x.classList.toggle("change");
+        }
+    </script>
 </body>
 </html>

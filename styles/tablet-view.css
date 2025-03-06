@@ -45,6 +45,7 @@ header .header-image2 {
 
 .how-it-works {
   gap: 78px;
+  margin: 0 auto;
   margin-bottom: 90px;
 }
 .how-it-works .how-it-works-text {
@@ -93,6 +94,9 @@ header .header-image2 {
 .download-app {
   margin: 0 auto;
   margin-bottom: 32px;
+}
+.download-app .app-image .app-image-desktop {
+  display: none;
 }
 
 .get-in-touch {
